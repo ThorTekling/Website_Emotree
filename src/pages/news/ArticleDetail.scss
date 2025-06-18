@@ -1,0 +1,29 @@
+.article-detail {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  img {
+    max-width: 100%;      // Makes the image responsive
+    height: auto;         // Keeps the aspect ratio
+    border-radius: 8px;   // Optional: adds rounded corners
+    margin-bottom: 16px;  // Adds space below the image
+  }
+
+  h1 {
+    margin: 20px 0; // Adjust margins for title
+  }
+
+  p {
+    font-size: 16px; // Set font size for the content
+    line-height: 1.5; // Improve readability
+  }

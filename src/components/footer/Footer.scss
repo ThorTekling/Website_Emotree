@@ -1,0 +1,101 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  color: #666; /* You can adjust this color to #333 for darker text or another color depending on the mood */
+  margin: 50px 0px;
+  
+  img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .container {
+    width: 1400px;
+    
+    .top {
+      display: flex;
+      justify-content: space-between;
+      
+      .item {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        h2 {
+          font-size: 16px;
+          color: #1dbf73; /* Color from the primary palette */
+        }
+        
+        span {
+          font-weight: 300;
+          color: #666; /* Use a neutral color for text */
+        }
+      }
+    }
+
+    hr {
+      margin: 50px 0px;
+      height: 0;
+      border: 1px solid #d0e3d5; /* A lighter green for the separator */
+    }
+    
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .left {
+        width: max-content;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        span {
+          font-size: 13px;
+          white-space: nowrap;
+          color: #888; /* Lighter text for the copyright */
+        }
+      }
+
+      .right {
+        width: max-content;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .social {
+          display: flex;
+          gap: 20px;
+          
+          img {
+            filter: grayscale(100%); /* Add a grayscale effect for social icons */
+            transition: filter 0.3s ease;
+
+            &:hover {
+              filter: grayscale(0%); /* Remove grayscale on hover */
+            }
+          }
+        }
+
+        .link {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            filter: grayscale(100%); /* Add a grayscale effect for language/coin icons */
+            transition: filter 0.3s ease;
+          }
+          
+          span {
+            color: #1dbf73; /* Use the main theme color */
+          }
+
+          &:hover img {
+            filter: grayscale(0%); /* Remove grayscale on hover */
+          }
+        }
+      }
+    }
+  }
+}

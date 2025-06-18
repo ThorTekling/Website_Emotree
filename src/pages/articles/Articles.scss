@@ -1,0 +1,67 @@
+.articles {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fdf7ef; // Ivory-earthy background
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4b3621; // coklat tanah
+  }
+  
+.article-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.article-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.article-item {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #d8c3a5; // Earthy brown-beige border
+  padding: 20px;
+  background-color: #fffdf6; // Soft earthy cream
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(139, 94, 60, 0.08); // Soft brown shadow
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.article-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #7c4f2b; // Medium brown
+}
+
+.article-item p {
+  font-size: 0.95rem;
+  color: #5b3b1d; // Slightly darker brown text
+  flex-grow: 1;
+}
+
+.article-item:hover {
+  background-color: #905b2f; // Earthy brown hover
+  transform: translateY(-5px);
+  cursor: pointer;
+  color: #fff;
+
+  h3, p {
+    color: #fff;
+  }
+}
+
+.article-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
